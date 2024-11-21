@@ -1,0 +1,35 @@
+/* Navbar container styles */
+nav {
+    background-color: rgb(3, 214, 252) !important; 
+    color: black !important;
+}
+
+/* Ensure the nav links are positioned correctly */
+.uk-navbar-nav > li > a {
+    position: relative;
+    color: #000; /* Default link color */
+    text-decoration: none;
+    padding-bottom: 5px; /* Add space for the underline */
+}
+
+/* Underline effect */
+.uk-navbar-nav > li > a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; /* Position it flush with the bottom of the link */
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #000e5c; /* Color of the underline */
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover state for the underline */
+.uk-navbar-nav > li > a:hover::after {
+    width: 100%;
+}
+
+/* Change link text color on hover */
+.uk-navbar-nav > li > a:hover {
+    color: #0077ff; /* Change link color on hover */
+}

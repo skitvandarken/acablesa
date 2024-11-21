@@ -1,0 +1,9 @@
+<div class="stats-container">
+    <div class="stat-item" *ngFor="let stat of stats">
+      <h2>
+        <countup [endVal]="stat.value" [duration]="2"></countup>
+      </h2>
+      <p>{{ stat.label }}</p>
+    </div>
+  </div>
+  

@@ -1,0 +1,35 @@
+.texto{
+    color:white !important;
+}
+
+
+.fundo-connectivity{
+    background-image: url('/img/sacs.jpg');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(5, 0, 100, 0.788);
+    background-blend-mode: darken;
+    padding-top:  20px;
+
+}
+
+
+.fundo-datacenter{
+    background-image: url('/img/fundo-datacenter.jpg');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(5, 0, 100, 0.788);
+    background-blend-mode: darken;
+    padding-top:  20px;
+
+}
+
+.fundo-grid{
+    background-color: rgb(0, 10, 44);
+}

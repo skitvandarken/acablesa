@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+body, nav{
+    font-family: "Roboto", serif !important; 
+  font-weight:400;
+  font-style: normal;
+  color: black !important;
+
+}
+
+li,a  {
+    font-family: "Roboto", serif !important; 
+    font-weight: 300;
+    font-style: normal;
+    color: black !important;
+
+}
+
+p{
+  font-family: "Roboto", serif !important; 
+  font-weight:200;
+  font-style: normal;
+  color: black !important;
+
+}
