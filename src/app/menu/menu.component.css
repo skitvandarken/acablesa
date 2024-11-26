@@ -33,3 +33,14 @@ nav {
 .uk-navbar-nav > li > a:hover {
     color: #0077ff; /* Change link color on hover */
 }
+
+
+.uk-offcanvas-bar {
+    background-color: #fff;
+    color: white !important;
+}
+
+li.uk-open .uk-accordion-title span[uk-icon] {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}

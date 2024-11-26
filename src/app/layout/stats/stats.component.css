@@ -1,23 +1,24 @@
-.stats-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-  }
-  
-  .stat-item {
-    text-align: center;
-    margin: 10px;
-  }
-  
-  .stat-item h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #4CAF50;
-  }
-  
-  .stat-item p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
+.fundo-stats{
+    background-image: url('/img/bg-connection-2.gif');
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(5, 0, 100, 0.788);
+    background-blend-mode: darken;
+    padding-top:  20px;
+
+}
+
+
+.texto{
+    color:white !important;
+    font-family: "Roboto", serif !important; 
+
+}
+
+
+.fundo-modal{
+    background-color: white !important;
+}

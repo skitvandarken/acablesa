@@ -1,0 +1,13 @@
+.fundo-parceiros{
+    background: linear-gradient(180deg, rgb(0, 25, 49), rgb(0, 6, 27), rgb(0, 25, 49));
+}
+
+.texto{
+    color:white !important;
+    font-family: "Roboto", serif !important; 
+
+}
+
+.parceiros{
+    width: 20%;
+}
