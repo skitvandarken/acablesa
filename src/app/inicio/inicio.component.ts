@@ -7,6 +7,8 @@ import { ParceirosComponent } from '../layout/parceiros/parceiros.component';
 import { VideocardComponent } from '../layout/videocard/videocard.component';
 import { RodapeComponent } from '../layout/rodape/rodape.component';
 import { MensagemComponent } from '../layout/mensagem/mensagem.component';
+import { CertComponent } from '../layout/cert/cert.component';
+import { TestemunhosComponent } from '../testemunhos/testemunhos.component';
 
 @Component({
   selector: 'app-inicio',
@@ -20,7 +22,10 @@ StatsComponent,
 ParceirosComponent,
 VideocardComponent,
 RodapeComponent,
-MensagemComponent
+MensagemComponent,
+CertComponent,
+TestemunhosComponent
+
 
   ],
   templateUrl: './inicio.component.html',
