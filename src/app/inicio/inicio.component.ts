@@ -9,25 +9,26 @@ import { RodapeComponent } from '../layout/rodape/rodape.component';
 import { MensagemComponent } from '../layout/mensagem/mensagem.component';
 import { CertComponent } from '../layout/cert/cert.component';
 import { TestemunhosComponent } from '../testemunhos/testemunhos.component';
+import { ProdutosComponent } from '../layout/produtos/produtos.component';
+import { ServicosComponent } from "../layout/servicos/servicos.component";
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
   imports: [
-
-MenuComponent,
-SliderComponent,
-CategoriasComponent,
-StatsComponent,
-ParceirosComponent,
-VideocardComponent,
-RodapeComponent,
-MensagemComponent,
-CertComponent,
-TestemunhosComponent
-
-
-  ],
+    MenuComponent,
+    SliderComponent,
+    CategoriasComponent,
+    StatsComponent,
+    ParceirosComponent,
+    VideocardComponent,
+    RodapeComponent,
+    MensagemComponent,
+    CertComponent,
+    TestemunhosComponent,
+    ProdutosComponent,
+    ServicosComponent
+],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
 })
