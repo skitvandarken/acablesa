@@ -35,8 +35,8 @@ jobs:
           WEBDISK_PASSWORD: ${{ secrets.WEBDISK_PASSWORD }}
         run: | 
           # Define paths
-          BUILD_DIR="dist/<your-angular-app-name>" # Update with your Angular app name
-          WEBDISK_URL="https://your-webdisk-url.com/public_html" # Adjust path as needed
+          BUILD_DIR="dist/acables" # Update with your Angular app name
+          WEBDISK_URL="https://fluxo-host.com/public_html" # Adjust path as needed
 
           # Deploy files to Web Disk
           for file in $(find $BUILD_DIR -type f); do
