@@ -36,7 +36,7 @@ jobs:
         run: | 
           # Define paths
           BUILD_DIR="dist/acables" # Update with your Angular app name
-          WEBDISK_URL="https://fluxo-host.com/public_html/demoserver-angolacables.fluxo-host.com" # Adjust path as needed
+          WEBDISK_URL="https://fluxo-host.com/demoserver-angolacables.fluxo-host.com" # Adjust path as needed
 
           # Deploy files to Web Disk
           for file in $(find $BUILD_DIR -type f); do
