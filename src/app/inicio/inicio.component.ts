@@ -11,6 +11,7 @@ import { CertComponent } from '../layout/cert/cert.component';
 import { TestemunhosComponent } from '../testemunhos/testemunhos.component';
 import { ProdutosComponent } from '../layout/produtos/produtos.component';
 import { ServicosComponent } from "../layout/servicos/servicos.component";
+import { EventosComponent } from "../layout/eventos/eventos.component";
 
 @Component({
   selector: 'app-inicio',
@@ -27,7 +28,8 @@ import { ServicosComponent } from "../layout/servicos/servicos.component";
     CertComponent,
     TestemunhosComponent,
     ProdutosComponent,
-    ServicosComponent
+    ServicosComponent,
+    EventosComponent
 ],
   templateUrl: './inicio.component.html',
   styleUrl: './inicio.component.css'
