@@ -1,0 +1,45 @@
+name: Deploy Angular App to cPanel Web Disk
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout Code
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set Up Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Ensure compatibility with your Angular app
+
+      # Step 3: Install Dependencies
+      - name: Install Dependencies
+        run: npm ci
+
+      # Step 4: Build Angular App
+      - name: Build Angular App
+        run: npm run build -- --configuration production
+
+      # Step 5: Deploy to cPanel Web Disk
+      - name: Deploy via WebDAV
+        env:
+          WEBDISK_USERNAME: ${{ secrets.WEBDISK_USERNAME }}
+          WEBDISK_PASSWORD: ${{ secrets.WEBDISK_PASSWORD }}
+        run: | 
+          # Define paths
+          BUILD_DIR="dist/<your-angular-app-name>" # Update with your Angular app name
+          WEBDISK_URL="https://your-webdisk-url.com/public_html" # Adjust path as needed
+
+          # Deploy files to Web Disk
+          for file in $(find $BUILD_DIR -type f); do
+            REMOTE_PATH="${WEBDISK_URL}/${file#"$BUILD_DIR/"}"
+            curl -u $WEBDISK_USERNAME:$WEBDISK_PASSWORD -T "$file" "$REMOTE_PATH"
+          done
